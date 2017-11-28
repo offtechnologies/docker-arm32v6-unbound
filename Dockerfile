@@ -10,8 +10,6 @@ ARG GPG_SHORTID="0x7E045F8D"
 ARG GPG_FINGERPRINT="EDFA A3F2 CA4E 6EB0 5681  AF8E 9F6F 1C2D 7E04 5F8D"
 ARG SHA256_HASH="4e7bd43d827004c6d51bef73adf941798e4588bdb40de5e79d89034d69751c9f"
 
-ENV UID=991 GID=991
-
 RUN echo "@community https://nl.alpinelinux.org/alpine/v3.6/community" >> /etc/apk/repositories \
  && apk -U upgrade \
  && apk add -t build-dependencies \
