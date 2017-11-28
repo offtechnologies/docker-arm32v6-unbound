@@ -47,6 +47,7 @@ RUN echo "@community https://nl.alpinelinux.org/alpine/v3.6/community" >> /etc/a
     LDFLAGS="-Wl,-z,now -Wl,-z,relro" \
  && NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
  && make -j${NPROC} && make install \
+ && adduser -s /sbin/nologin unbound \
  && apk del build-dependencies \
  && rm -rf /var/cache/apk/* /tmp/* /root/.gnupg
 
