@@ -57,4 +57,6 @@ RUN chmod +x /usr/local/bin/*
 
 EXPOSE 53 53/udp
 
+VOLUME /usr/local/etc/unbound
+
 CMD ["run.sh"]
