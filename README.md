@@ -25,4 +25,4 @@ Raspberry Pi 1 compatible Docker base image with Alpine Linux and Unbound.
 ## 0.0.0 - 2017-11-28
 * work in progress
 * Custom base image: Alpine Linux arm32v6 ver 3.6 with qemu-arm-static
-* Tested on Raspberry Pi 1 Model B Rev 2 with Arch Linux 4.9.58-1 and Docker v17.11.0-ce
+* Tested on Raspberry Pi 1 Model B Rev 2 with  Raspbian 4.9.51-1+rpi3 (2017-10-22) armv6l GNU/Linux and Docker v17.10.0-ce (It looks Docker 17.11.0 has the problem. sudo apt install docker-ce=17.09.0~ce-0~raspbian)
